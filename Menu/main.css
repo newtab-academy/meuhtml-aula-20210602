@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.header-top {
+    background-color: #E0E0E0;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-top span {
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hamburguer-icon div {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+}
+
+.responsive-menu ul {
+    display: none;
+    list-style-type: none;
+    background-color: #333;
+    font-size: 16px;
+    color: white;
+    position: fixed;
+    height: 100%;
+    width: 85.4%;
+    right: 0px;
+    top: 0px;
+    margin: 0px;
+    padding: 20px 0px;
+}
+
+
+.responsive-menu ul li {
+    text-align: right;
+    margin: 7px 0;
+    padding: 0px 20px;
+}
+.responsive-menu ul li:nth-child(1) {
+    text-align: left;
+}
+
+
+.responsive-menu ul li:hover {
+    background-color: #c4c4c4;
+    color: #333;
+}
+
+.responsive-menu ul li:hover:nth-child(1) {
+    background-color: #333;
+    color: white;
+}
+
+.responsive-menu:hover ul {
+    display: block;
+}
+/* ----------------------------------- */
+
+@media screen and (min-width:412px) {
+    .responsive-menu ul {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        width: 350px;
+        height: 40px;
+        background-color: white;
+        color: #333;
+    }
+
+    .responsive-menu ul li {
+        border-left: 1px solid #333;
+    }
+
+    .responsive-menu ul li:nth-child(2) {
+        border: 0;
+    }
+
+    .responsive-menu ul li:nth-child(1) {
+        display: none;
+    }
+
+    .hamburguer-icon {
+        display: none;
+    }
+}
+
+input[type="text"] {
+    color: pink;
+}
